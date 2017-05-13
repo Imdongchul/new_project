@@ -1,0 +1,19 @@
+<div class="back">
+<h2>Asciify Complete!</h2>
+<p>Here's Your COOL Ascii Art</p>
+
+<pre class="hack"><%= @output1 %></pre>
+<pre class="hack"><%= @output2 %></pre>
+<pre class="hack"><%= @output3 %></pre>
+<p><a href="/">되돌아가기</a></p>
+
+<% @questions.each do |db| %>
+
+	<p>폰트:<%= db.select_name %></p>
+	<p>이름:<%= db.name %></p>
+	<p>이메일:<%= db.email%></p>
+	<p>번호:<%= db.phone_num %></p>
+	<hr>
+
+<% end %>
+</div>
